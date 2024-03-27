@@ -1,0 +1,71 @@
+body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #5ca6f7, #b680d1);
+            background-size: cover; /* Make the gradient cover the entire body */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        h1 {
+    text-align: center;
+    color: #1c7edb;
+    margin-top: 34vh;
+font-style: italic;
+font-size: 42px;
+}
+
+        form {
+            max-width: 300px;
+            margin: 3vh auto 41vh auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 40vh;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        /* Media Query for Mobile Devices */
+        @media only screen and (max-width: 600px) {
+            form {
+                max-width: 80%;
+                margin: 10vh auto;
+            }
+        }
